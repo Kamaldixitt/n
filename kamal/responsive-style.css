@@ -1,0 +1,112 @@
+/* Mobile (up to 576px) */
+@media (max-width: 576px) {
+    .banner_wrapper h1 {
+        font-size: 28px; /* Slightly smaller to fit smaller screens */
+        line-height: 36px;
+    }
+    
+    .banner_wrapper .d-flex {
+        flex-direction: column;
+        gap: 15px !important;
+    }
+    
+    .portfolio_wrapper .card {
+        min-height: 280px; /* Reduced height for smaller devices */
+    }
+
+    .about_wrapper .nav-pills {
+        display: block;
+        text-align: center; /* Center-align items for better mobile experience */
+    }
+}
+
+/* Small devices (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .banner_wrapper h1 {
+        font-size: 34px; /* Slightly smaller for smaller viewports */
+        line-height: 42px;
+    }
+    
+    .portfolio_wrapper .card {
+        min-height: 320px; /* Adjusted for small devices */
+    }
+
+    .navbar-collapse {
+        padding: 15px; /* Reduced padding for smaller screens */
+        margin-top: 10px;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner_wrapper h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    
+    .portfolio_wrapper .card {
+        min-height: 380px; /* Adjusted to maintain proportion */
+    }
+
+    /* Center navigation items on tablets */
+    .navbar-collapse {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact_wrapper form {
+        padding: 25px;
+        max-width: 90%; /* Prevent form from being too wide on larger tablets */
+        margin: 0 auto;
+    }
+}
+
+/* All mobile devices (up to 991px) */
+@media (max-width: 991px) {
+    /* Base styles */
+    h1 {
+        font-size: 38px; /* Balanced for various devices */
+        line-height: 46px;
+    }
+
+    h2 {
+        font-size: 24px; /* Slight reduction for better readability */
+    }
+
+    p {
+        font-size: 14px; /* Slight increase for easier reading */
+        line-height: 26px;
+    }
+
+    /* Navigation */
+    .navbar-collapse {
+        background: var(--bg-color);
+        padding: 18px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    /* About section */
+    .about_wrapper ul.nav-pills {
+        width: 100%;
+        margin: auto;
+        border: 0;
+    }
+
+    .about_wrapper ul li .nav-link {
+        font-size: 14px; /* Adjusted for better readability */
+    }
+
+    /* Contact form */
+    .contact_wrapper form {
+        padding: 20px;
+        max-width: 95%; /* Ensures the form doesn’t stretch too wide */
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .footer_wrapper .social-icon {
+        justify-content: center !important;
+        margin-top: 20px;
+    }
+}
